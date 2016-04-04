@@ -38,14 +38,14 @@
 <h2>
 <a id="what-is-lyrical-analysis" class="anchor" href="#what-is-lyrical-analysis" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What is Lyrical Analysis?</h2>
 
-<p>First, lyrical analysis doesn’t necessarily just mean sentiment analysis. There are a lot of other reasons to look at lyrics. As Mahedero, Martinez, and Cano show, you can find out what language the song is in with high accuracy. You can extract the song structure, meaning you can pull out the verses, chorus, bridge, etc with decently high accuracy (they achieved 76.66% accuracy). You can use techniques to determine how similar lyrics are, a useful tool for piracy detection in music or for recommendation systems.</p>
+<p>First, lyrical analysis doesn’t necessarily just mean sentiment analysis. There are a lot of other reasons to look at lyrics. As <a href="http://mtg.upf.edu/files/publications/9d0455-ACM-MM-2005-JPGMahedero-PCano-AMartinez.pdf">Mahedero, Martinez, and Cano show</a>, you can find out what language the song is in with high accuracy. You can extract the song structure, meaning you can pull out the verses, chorus, bridge, etc with decently high accuracy (they achieved 76.66% accuracy). You can use techniques to determine how similar lyrics are, a useful tool for piracy detection in music or for recommendation systems.</p>
 
 <p>But still, the topic most people are probably interested in is sentiment analysis, which isn’t easy. Mahedero, Martinez, and Cano were able to determine the theme of songs with 82% accuracy which is pretty high. But this was simply categorizing songs into 5 different themes -- Love, Violent, Protest (anti-war), Christian, and Drug. Why these specific themes were picked I’m not sure, but of course not all music can fit into these 5 categories.</p>
 
 <h2>
 <a id="the-big-issues" class="anchor" href="#the-big-issues" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The Big Issues</h2>
 
-<p>There are a few major issues with sentiment analysis in lyrics, outlined very well in a paper by Ashley Oudenne and Sarah Chasins:
+<p>There are a few major issues with sentiment analysis in lyrics, outlined very well in <a href="http://www.cs.berkeley.edu/~schasins/papers/identifyingEmotionalPolarity.pdf">a paper by Ashley Oudenne and Sarah Chasins</a>:
 1. Songs can have negative lyrics, but end on a positive note, and vice versa
 2. Songs may not have specific words that are associated with being positive or negative, but they might still overall express a positive or negative sentiment.
 3. Songs can have negative emotions about positive things, or vice versa.</p>
@@ -55,7 +55,7 @@
 <h2>
 <a id="the-big-picture" class="anchor" href="#the-big-picture" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The Big Picture</h2>
 
-<p>One interesting paper was written by Xiao Hu and J. Stephen Downie. They decided to try and combine multiple different techniques in both lyrical analysis and audio analysis to determine sentiment in songs. They first ran experiments in lyrical analysis, picking the best possible algorithms and features to use. For audio analysis, they used a system of classification that has 63 different possible features, obtained using a Short Time Fourier Transform (check it out -- it’s not as scary as it sounds, I promise!)</p>
+<p>One interesting paper was <a href="http://www.music-ir.org/archive/papers/JCDL2011_Improving_Mood_Classification.pdf">written by Xiao Hu and J. Stephen Downie</a>. They decided to try and combine multiple different techniques in both lyrical analysis and audio analysis to determine sentiment in songs. They first ran experiments in lyrical analysis, picking the best possible algorithms and features to use. For audio analysis, they used a system of classification that has 63 different possible features, obtained using a Short Time Fourier Transform (check it out -- it’s not as scary as it sounds, I promise!)</p>
 
 <p>They confirmed their beliefs that a hybrid system of musical and lyrical analysis would work better than analyzing the two separately. They found it was 8% more accurate than just lyrics and 9.6% more accurate than just audio, and also reduced the training data needed! Engineering aside, as a musician this is very exciting as it shows how lyrics and music can be combined to create an overall atmosphere and tone for a song. These findings are also interesting if you think about how it can be implemented into services like Spotify and Apple Music. If we can analyze not just the musical style but the lyrical themes a user likes the best, we can use this technique to improve recommendation systems and algorithmically generated playlists!</p>
 
