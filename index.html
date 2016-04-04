@@ -46,9 +46,9 @@
 <a id="the-big-issues" class="anchor" href="#the-big-issues" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The Big Issues</h2>
 
 <p>There are a few major issues with sentiment analysis in lyrics, outlined very well in <a href="http://www.cs.berkeley.edu/~schasins/papers/identifyingEmotionalPolarity.pdf">a paper by Ashley Oudenne and Sarah Chasins</a>:
-1. Songs can have negative lyrics, but end on a positive note, and vice versa
-2. Songs may not have specific words that are associated with being positive or negative, but they might still overall express a positive or negative sentiment.
-3. Songs can have negative emotions about positive things, or vice versa.</p>
+<br/>1. Songs can have negative lyrics, but end on a positive note, and vice versa
+<br/>2. Songs may not have specific words that are associated with being positive or negative, but they might still overall express a positive or negative sentiment.
+<br/>3. Songs can have negative emotions about positive things, or vice versa.</p>
 
 <p>Basically, lyrics are hard to deal with because they often are not as straightforward as some other types of writing such as reviews or internet comments. One of the bigger examples of sentiment analysis in NLP is movie reviews -- by looking for phrases like “I enjoyed” or “I hated”, etc. algorithms can determine whether or not a movie review is positive or negative. But for the reasons above, this is much harder with lyrics. Oudenne and Chasins did have some success with a pretty straightforward algorithm. They found that using word dictionaries yielded the best results, but still did not achieve accuracies as high as seen in movie reviews. Their technique involved creating dictionaries of positive and negative words, and then comparing words found in lyrics to these dictionaries, ignoring any words that are very common so as not to skew the results.</p>
 
